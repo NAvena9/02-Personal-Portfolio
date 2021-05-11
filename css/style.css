@@ -119,7 +119,7 @@
     padding-right: 4px;
   }
   
-  /* All HTML <h2> tags inside the <section> and <footer> tags will have this properties */
+  /* Setting up H2 <Project & contact sections>  */
   section h2,
   footer h2 {
     display: flex;
@@ -129,7 +129,7 @@
     margin-bottom: 50px;
   }
   
-  /* All HTML <p> tags inside the <section> tag will have this properties */
+  /* Section <p>, the About me statement or P element */
   section p {
     font-size: 150%;
     padding: 5px;
@@ -151,7 +151,7 @@
   /* The HTML <figuere> tags will have this properties */
   figure {
     position: relative;
-    background-color: rgb(136, 227, 255);
+    background-color: rgb(91, 152, 231);
   }
   
   /*Creates an ID named "img1", its properties will apply to all the HTML elements calling this class*/
@@ -160,7 +160,7 @@
     margin-bottom: 10px;
     height: auto;
     width: 900px;
-    border: 10px ridge rgb(139, 197, 211);
+    border: 10px ridge rgb(91, 152, 231);
     border-radius: 20px;
   }
   
@@ -181,18 +181,20 @@
   /* The HTML <h3> tags will have this properties */
   h3 {
     position: absolute;
-    top: 30%;
+    top: 5%;
     z-index: 1;
-    border-top: 2px solid rgb(42, 56, 104);
-    border-bottom: 2px solid rgb(42, 56, 104);
-    border-right: 2px solid rgb(42, 56, 104);
-    font-size: 150%;
+    border-top: 1px solid rgb(91, 152, 231);
+    border-bottom: 1px solid rgb(91, 152, 231);
+    border-right: 1px solid rgb(91, 152, 231);
+    font-size: 130%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: fit-content;
     width: 150px;
-    background-color: rgb(116, 186, 204);
+    background-color: rgb(91, 152, 231);
+    padding: 10px;
+    text-align: center;
   }
   
   /*Creates a class named "img2-prop", its properties will apply to all the HTML elements calling this class*/
@@ -200,7 +202,7 @@
     margin: 10px;
     height: auto;
     width: 440px;
-    border: 10px ridge rgb(139, 197, 211);
+    border: 10px ridge rgb(91, 152, 231);
     border-radius: 20px;
   }
   
