@@ -11,7 +11,7 @@
     scroll-behavior: smooth;
   }
   
-  /* Header section customization */
+  /* HEADER SECTION customization */
   header {
     position: fixed;
     top: 0;
@@ -66,17 +66,15 @@
     text-decoration: none;
   }
   
-  /* Creates a class named "underline2", its properties will apply to all the HTML elements calling this class
-  .underline2 {
-    color: var(--fontColor);
-    border-bottom: 3px solid var(--fontColor);
-    text-decoration: none;
-    margin: 0px 0 15px 80px;
-  } */
+  /*Proprties for background image*/
+  .imageEl {
+    width: 100%;
+    display: inline;
+  }
   
 
-  
-  /* The HTML <article> tag will have this properties */
+
+  /* MAIN SECTION customization */
   article {
     position: relative;
     display: flex;
@@ -85,25 +83,19 @@
     width: 100%;
     margin-top: 73px;
   }
-  
-  /*Creates a class named "img-sub", its properties will apply to all the HTML elements calling this class*/
-  .img-sub {
-    width: 100%;
-  }
-  
-  /* All HTML <img> tags inside the <main> tag will have this properties */
+
+    /* Name: Nicolas C A properties of article and background image */
+    article h2 {
+        position: absolute;
+        font-size: 250%;
+        padding: 30px;
+        margin: 15px;
+        bottom: 0;
+        color: var(--light);
+      }
+
   main img {
     border-radius: 10px;
-  }
-  
-  /* All HTML <h2> tags inside the <article> tag will have this properties */
-  article h2 {
-    margin: 15px;
-    position: absolute;
-    bottom: 0;
-    font-size: 300%;
-    padding: 7px;
-    color: var(--light);
   }
   
   /* The HTML <section> tags will have this properties */
@@ -114,9 +106,8 @@
     width: 100%;
   }
   
-  /* The HTML <h2> tags will have this properties */
   h2 {
-    padding-right: 4px;
+    padding-right: 10px;
   }
   
   /* Setting up H2 <Project & contact sections>  */
@@ -125,21 +116,21 @@
     display: flex;
     justify-content: flex-end;
     width: 20%;
-    font-size: 300%;
+    font-size: 250%;
     margin-bottom: 50px;
   }
   
-  /* Section <p>, the About me statement or P element */
   section p {
     font-size: 150%;
     padding: 5px;
     height: auto;
     width: 80%;
     border-left: 4px solid var(--fontColor);
+    padding-left: 35px;
   }
   
-  /*Creates a class named "main-img", its properties will apply to all the HTML elements calling this class*/
-  .main-imgs {
+  /* Img of the principal project*/
+  .image-principal {
     width: 80%;
     border-left: 4px solid var(--fontColor);
     display: flex;
@@ -148,14 +139,14 @@
     justify-content: center;
   }
   
-  /* The HTML <figuere> tags will have this properties */
+  /* <figuere> tag will have this properties */
   figure {
     position: relative;
     background-color: rgb(91, 152, 231);
   }
   
-  /*Creates an ID named "img1", its properties will apply to all the HTML elements calling this class*/
-  #img1 {
+  /**/
+  #image1 {
     margin-top: 10px;
     margin-bottom: 10px;
     height: auto;
@@ -164,13 +155,13 @@
     border-radius: 20px;
   }
   
-  /*Creates a hover selector over the ID named "img1" and "img2-prop", it targets all the img inside this two ID's to make them blur*/
-  #img1 img:hover,
-  .img2-prop img:hover {
+  /*Creating a hover to add a blurry effect to the project images*/
+  #image1 img:hover,
+  .imagesEl img:hover {
     filter: blur(0px);
   }
   
-  /*Creates a class named "filter", its properties will apply to all the HTML elements calling this class*/
+  /*add a blurry effect to the project images*/
   .filter {
     transition: 0.6s;
     filter: blur(1.9px);
@@ -178,7 +169,7 @@
     height: 100%;
   }
   
-  /* The HTML <h3> tags will have this properties */
+  /* Titles over the projects */
   h3 {
     position: absolute;
     top: 5%;
@@ -197,8 +188,7 @@
     text-align: center;
   }
   
-  /*Creates a class named "img2-prop", its properties will apply to all the HTML elements calling this class*/
-  .img2-prop {
+  .imagesEl {
     margin: 10px;
     height: auto;
     width: 440px;
@@ -206,17 +196,16 @@
     border-radius: 20px;
   }
   
-  /* The HTML <footer> tags will have this properties */
+  /* FOOTER CONFIG */
   footer {
     position: relative;
     display: flex;
     flex-direction: row;
     height: auto;
     width: 100%;
-    margin: 3px;
+    margin: 5px;
   }
   
-  /* All HTML <h2> tags inside the <footer> tag will have this properties */
   footer h2 {
     position: relative;
     display: flex;
@@ -224,7 +213,6 @@
     height: auto;
   }
   
-  /* All HTML <div> tags inside the <footer> tag will have this properties */
   footer div {
     border-left: 4px solid var(--fontColor);
     width: 80%;
@@ -233,15 +221,15 @@
     align-items: center;
   }
   
-  /* All HTML <a> tags inside the <footer> tag will have this properties */
   footer a {
-    margin: 20px;
+    margin: 30px;
     text-decoration: none;
-    border-bottom: 3px solid var(--fontColor);
+    font-size: 25px;
   }
-  
-  /* It reajust the HTML elements to have a Responsive layout */
-  @media screen and (max-width: 1025px) {
+
+
+  /* RESPONSIVE LAYOUT CONFIGS  */
+  @media screen and (max-width: 1024px) {
       * {
         font-size: 93%;
       }
@@ -253,32 +241,50 @@
       }
     }
     
-    /* It reajust the HTML elements to have a Responsive layout */
-    @media screen and (max-width: 1164px) {
-      figure,
-      img {
-        min-width: 50%;
-      }
-    }
-    
-    /* It reajust the HTML elements to have a Responsive layout */
-    @media screen and (max-width: 1250px) {
+    @media screen and (max-width: 992px) {
       * {
-        font-size: 95%;
+        font-size: 90%;
+      }
+      h1 {
+        font-size: 120%;
+      }
+    }
+
+    @media screen and (max-width: 690px) {
+      nav {
+        flex-direction: column;
+        margin-top: 150px;
+      }
+      footer div {
+        flex-direction: column;
+        /* position: relative; */
+      }
+      header div {
+        height: 100px;
+        display: inline-flex;
+        /* position: relative; */
+      }
+      /* .titleP{
+        display: inline-block;
+        width: 100%;
+      } */
+      h1 {
+        font-size: 100%;
+      }
+      article {
+        margin-top: 165px;
+      }
+      article h2 {
+        font-size: 170%;
+      }
+      footer a {
+        font-size: 100%;
+      }
+      footer h2 {
+        font-size: 165%;
       }
     }
   
-    /* It reajust the HTML elements to have a Responsive layout */
-  @media screen and (max-width: 320px) {
-    header a {
-      font-size: 20px;
-    }
-    main {
-      font-size: 63%;
-    }
-  }
-  
-  /* It reajust the HTML elements to have a Responsive layout */
   @media screen and (max-width: 460px) {
     nav a {
       font-size: 14px;
@@ -288,40 +294,3 @@
     }
   }
   
-  /* It reajust the HTML elements to have a Responsive layout */
-  @media screen and (max-width: 690px) {
-    nav {
-      flex-direction: column;
-    }
-    footer div {
-      flex-direction: column;
-    }
-    header div {
-      height: 50px;
-    }
-    h1 {
-      font-size: 100%;
-    }
-    article {
-      margin-top: 165px;
-    }
-    article h2 {
-      font-size: 170%;
-    }
-    footer a {
-      font-size: 140%;
-    }
-    footer h2 {
-      font-size: 165%;
-    }
-  }
-  
-  /* It reajust the HTML elements to have a Responsive layout */
-  @media screen and (max-width: 849px) {
-    * {
-      font-size: 90%;
-    }
-    h1 {
-      font-size: 120%;
-    }
-  }
