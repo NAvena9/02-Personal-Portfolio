@@ -2,7 +2,9 @@
 
 ## Project
 
-For this project I have created a simple portfolio of work to showcase my skills and talents to employers looking to fill a part-time or full-time position. An effective portfolio highlights the strongest work as well as the thought processes behind it. . 
+For this project I have created a simple portfolio using the technologies HTML and CSS. This portfolio contains my recent work as well as some information about me such as contact information and facts about me. 
+
+The general idea of this specific project, beside applying the knowledge acquired during the sessions, is to showcase my skills and talents to potential employers. 
 
 
 
@@ -46,6 +48,8 @@ THEN I am presented with a responsive layout that adapts to my viewport
 The following image shows the web application's appearance :
 
 ![portfolio demo](./resources/deployed.png)
+
+
 
 
 
