@@ -253,15 +253,17 @@
     @media screen and (max-width: 690px) {
       nav {
         flex-direction: column;
-        margin-top: 150px;
+        /* margin-top: 150px; */
       }
       footer div {
         flex-direction: column;
         /* position: relative; */
       }
-      header div {
-        height: 100px;
-        display: inline-flex;
+      header {
+        height: 140px;
+        font-size: 15px;
+        padding-top: 20px;
+        /* display: inline-flex; */
         /* position: relative; */
       }
       /* .titleP{
@@ -278,7 +280,7 @@
         font-size: 170%;
       }
       footer a {
-        font-size: 100%;
+        font-size: 120%;
       }
       footer h2 {
         font-size: 165%;
@@ -294,3 +296,14 @@
     }
   }
   
+  @media screen and (max-width: 320px) {
+    header a {
+      font-size: 15px;
+    }
+    main {
+      font-size: 63%;
+    }
+    header {
+      font-size: 50%;
+    }
+  }
